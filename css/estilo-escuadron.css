@@ -1,5 +1,7 @@
 :root{
-  color-primario:rgba(25, 174, 214, 0.83);
+  --primary-boutton: #00a49d;
+  --blue: #00b;
+  --fullwidth: 100%;
 }
 .color-nav{
   background-color: rgba(25, 174, 214, 1);
