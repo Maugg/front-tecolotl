@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Sniglet');
+
 :root{
   /*turquesa*/
   --turquesa-primary-color: #00a49d;
@@ -27,13 +29,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Sniglet', "Arial Black";
+  font-weight: bold;
+  font-size: 16px;
   /* 2 */
   box-sizing: border-box;
   padding: 0 15px;
   /* 3 */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";*/
   /* 4 */
   text-decoration: none;
+
 }
 .barra-nav{
   width: 100%;
@@ -41,27 +47,31 @@
   background-color: var(--color-barra-nav);
 }
 .nav-sub>li{
-  margin: 10px 10px;
+  margin: 10px 3px;
   padding: 10px 20px;
   font-weight: bold;
 }
 .nav-sub>li>a{
+    font-family: 'Sniglet', "Arial Black";
     font-size: 15px !important;
-  padding: 0 0 7px 0;
+  padding: 7px 10px 7px 10px;
+  color:#000;
 }
 
 .nav-sub>li>a:hover{
-  color: var(--subnav-color);
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: var(--subnav-color);
+  color: var(--turquesa-primary-color);
+  border: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: var(--turquesa-primary-color);
 }
+
 .nav-sub-active>a{
-  color: var(--subnav-color) !important;
-  border-bottom-style: solid;
-  border-bottom-width: 5px;
-  border-bottom-color: var(--subnav-color);
-}
+  color: var(--turquesa-primary-color) !important;
+  border: solid;
+  border-width: 3px;
+  border-radius: 5px;
+  border-color: var(--turquesa-primary-color);}
 
 .section-color{
   background-color: #f4f3ed;
@@ -156,3 +166,16 @@
 .letra-grande{
   font-size: 20px;
 }
+.uk-card {
+  border-left: 5px solid;
+  border-right: 5px solid;
+  border-color: var(--nsecundary-option-one);
+  position: relative;
+  transition: box-shadow 0.15s ease-out;
+  border-radius: 5%;
+}
+
+.uk-navbar-dropdown{
+   border: 6px solid;
+   border-color: var(--subnav-color);
+ }
