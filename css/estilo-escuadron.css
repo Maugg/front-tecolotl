@@ -20,6 +20,7 @@
   --color-nav-primary:#00a8ec;
   --color-barra-nav:#0079b9;
   --subnav-color:#0079b9;
+  --form-focul:#DCEDC8;
 }
 .color-nav{
   background-color: var(--color-nav-primary);
@@ -32,6 +33,7 @@
   font-family: 'Sniglet', "Arial Black";
   font-weight: bold;
   font-size: 16px;
+  color:white;
   /* 2 */
   box-sizing: border-box;
   padding: 0 15px;
@@ -41,10 +43,21 @@
   text-decoration: none;
 
 }
+
+.header-color-card{
+  background-color: var(--color-nav-primary);
+}
 .barra-nav{
   width: 100%;
   height: 15px;
   background-color: var(--color-barra-nav);
+}
+.barra-modal{
+  width: 100%;
+  height: 15px;
+  background-color: var(--color-barra-nav);
+  position: relative;
+  top: -1px;
 }
 .nav-sub>li{
   margin: 10px 3px;
@@ -99,7 +112,7 @@
   border-style: solid;
   border-color: var(--turquesa-primary-color);
   border-width: 3px;
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
   display: block;
   margin-top: 10px;
@@ -119,12 +132,13 @@
   border-style: solid;
   border-color: var(--tsecundary-option-one);
   border-width: 3px;
-  border-radius: 8px;
+  border-radius: 20px;
   text-align: center;
   display: block;
   margin-top: 10px;
 
 }
+
 .boton-escuadron-secundary:hover{
   text-decoration: none;
   background-color: #fff;
@@ -176,6 +190,85 @@
 }
 
 .uk-navbar-dropdown{
-   border: 6px solid;
+   border: 3px solid;
    border-color: var(--subnav-color);
+  border-radius: 5%;
  }
+.boton-escuadron-base{
+  background-color: var(--turquesa-primary-color);
+  padding: 8px 20px;
+  color:white;
+  font-weight: bold;
+  border-style: solid;
+  border-color: var(--turquesa-primary-color);
+  border-width: 3px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.boton-escuadron-base:hover{
+  text-decoration: none;
+  background-color: rgb(224,255,255);
+  color: black;
+}
+
+.boton-escuadron-base-secundary{
+  background-color: var(--tsecundary-option-one);
+  padding: 8px 20px;
+  color:white;
+  font-weight: bold;
+  border-style: solid;
+  border-color: var(--tsecundary-option-one);
+  border-width: 3px;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.boton-escuadron-base-secundary:hover{
+  text-decoration: none;
+  background-color: rgb(255,255,224);
+  color: black;
+}
+
+/*clase para las tablas*/
+/*.uk-input,*/
+/*.uk-select,*/
+/*.uk-textarea {*/
+  /*border-radius: 20px;*/
+  /*border-width: 2px;*/
+/*}*/
+
+input[type=text],input[type=email],input[type=password],select,textarea{
+  border-radius: 20px !important;
+ border-width: 2px !important;
+  padding: 0 20px;
+  border-color: var(--form-focul) !important;
+}
+
+input[type=text]:focus,input[type=email]:focus,input[type=password]:focus,select:focus,textarea:focus{
+  border-color: var(--turquesa-primary-color) !important;
+  border-width: 3px!important;
+}
+
+.uk-radio:checked,
+.uk-checkbox:checked,
+.uk-checkbox:indeterminate {
+  background-color: var(--turquesa-primary-color) !important;
+  /*border-color: transparent;*/
+}
+
+.uk-modal-dialog{
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.titulo-modal{
+  color: white;
+}
