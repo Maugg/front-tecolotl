@@ -21,6 +21,12 @@
   --color-barra-nav:#0079b9;
   --subnav-color:#0079b9;
   --form-focul:#DCEDC8;
+  /*Nav-verde*/
+  --activo-fondo-navbar: #689F38;
+  --activo-letra-navbar: #FFFFFF;
+  --inactivo-fondo-navbar: #DCEDC8;
+  --inactivo-letra-navbar: #757575;
+
 }
 .color-nav{
   background-color: var(--color-nav-primary);
